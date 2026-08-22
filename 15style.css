@@ -1,0 +1,9 @@
+#box{
+    height: 300px;
+    width: 100px;
+    background-color:crimson;
+    color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+
+}

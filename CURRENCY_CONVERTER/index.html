@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Currency Converter</h2>
+
+        <form>
+
+            <!-- Amount -->
+            <div class="amount">
+                <p>Enter Amount</p>
+
+                <input
+                    type="number"
+                    value="100"
+                    min="1"
+                    id="amount"
+                >
+            </div>
+
+
+            <!-- Currency Dropdowns -->
+            <div class="dropdown">
+
+                <!-- FROM -->
+                <div class="from">
+
+                    <p>FROM</p>
+
+                    <div class="select-container">
+
+                        <img
+                            src="https://flagsapi.com/US/flat/64.png"
+                            alt="From Country"
+                        >
+
+                        <select name="from">
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Swap Icon -->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+
+                <!-- TO -->
+                <div class="to">
+
+                    <p>TO</p>
+
+                    <div class="select-container">
+
+                        <img
+                            src="https://flagsapi.com/IN/flat/64.png"
+                            alt="To Country"
+                        >
+
+                        <select name="to">
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Result -->
+            <div class="msg">
+                Getting exchange rate...
+            </div>
+
+
+            <!-- Button -->
+            <button type="submit">
+                GET EXCHANGE RATE
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- IMPORTANT: country.js must come BEFORE script.js -->
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

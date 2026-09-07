@@ -1,0 +1,481 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #ffd6c9, transparent 35%),
+        radial-gradient(circle at bottom right, #c96f68, transparent 35%),
+        linear-gradient(135deg, #d98b7c, #e9a08f);
+
+    padding: 30px;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    width: 700px;
+    max-width: 95%;
+
+    min-height: 550px;
+
+    padding: 50px 55px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 248, 240, 0.92);
+
+    box-shadow:
+        0 25px 60px rgba(80, 35, 30, 0.25),
+        0 8px 20px rgba(80, 35, 30, 0.12);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.container h2 {
+    text-align: center;
+
+    font-size: 2.4rem;
+
+    color: #542d29;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+form {
+    margin: 0;
+}
+
+
+/* ================================
+   AMOUNT SECTION
+================================ */
+
+.amount {
+    margin-bottom: 35px;
+}
+
+.amount p {
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    color: #633b36;
+
+    margin-bottom: 10px;
+}
+
+
+form input {
+    width: 100%;
+
+    height: 60px;
+
+    padding: 0 18px;
+
+    border: 2px solid #d6aaa0;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background-color: #fffdf9;
+
+    color: #3f2926;
+
+    font-size: 1.15rem;
+
+    transition: 0.3s;
+}
+
+
+form input:focus {
+    border-color: #c75d52;
+
+    box-shadow:
+        0 0 0 4px rgba(199, 93, 82, 0.12);
+}
+
+
+/* ================================
+   DROPDOWN SECTION
+================================ */
+
+.dropdown {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 25px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 1px solid #ead1ca;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================================
+   FROM / TO
+================================ */
+
+.from,
+.to {
+    flex: 1;
+}
+
+.from p,
+.to p {
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    color: #70443d;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   SELECT CONTAINER
+================================ */
+
+.select-container {
+    width: 100%;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 8px 14px;
+
+    border-radius: 12px;
+
+    background-color: #fffdf9;
+
+    border: 2px solid #d6aaa0;
+
+    transition: 0.3s;
+}
+
+
+.select-container:hover {
+    border-color: #c75d52;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(120, 55, 45, 0.12);
+}
+
+
+/* ================================
+   FLAGS
+================================ */
+
+.select-container img {
+    width: 40px;
+
+    height: 30px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+
+/* ================================
+   SELECT
+================================ */
+
+.select-container select {
+    flex: 1;
+
+    width: auto;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #3f2926;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* ================================
+   SWAP ICON
+================================ */
+
+.dropdown > i {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #c75d52;
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(160, 65, 55, 0.3);
+
+    transition: 0.3s;
+}
+
+
+.dropdown > i:hover {
+    transform: rotate(180deg) scale(1.08);
+
+    background-color: #a94b43;
+}
+
+
+/* ================================
+   MESSAGE / RESULT
+================================ */
+
+.msg {
+    width: 100%;
+
+    min-height: 75px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 35px 0 25px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7f2,
+            #ffe8df
+        );
+
+    border: 1px solid #edc5bb;
+
+    color: #542d29;
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(100, 45, 35, 0.08);
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+form button {
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c75d52,
+            #a9443d
+        );
+
+    color: white;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(160, 65, 55, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+form button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(160, 65, 55, 0.4);
+}
+
+
+form button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px 25px;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+
+        margin-bottom: 30px;
+    }
+
+    .dropdown {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .from,
+    .to {
+        width: 100%;
+    }
+
+    .dropdown > i {
+        transform: rotate(90deg);
+    }
+
+    .dropdown > i:hover {
+        transform: rotate(270deg) scale(1.08);
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 450px) {
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .select-container {
+        height: 58px;
+    }
+
+    .select-container img {
+        width: 34px;
+        height: 26px;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+}
